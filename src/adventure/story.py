@@ -27,6 +27,7 @@ if __name__ == "__main__":
         choice = Prompt.ask("[b]\nWhich direction do you choose? ([i]left[/i]/[i]right[/i]/[i]exit[/i])[/b]")
         choice = choice.strip().lower()
         if choice == 'exit':
+            print("[b][magenta]You chose to exit the forest, satisfied with your journey.[/magenta][/b]")
             break
         
         print(step(choice, events))
